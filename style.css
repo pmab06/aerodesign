@@ -1,0 +1,42 @@
+*{
+    font-family: 'Inter';
+    font-weight: 200;
+}
+body{
+    background-image: url('beachsunset.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.aero-glass{
+    padding: 2rem;
+    padding-top: 3rem;
+    padding-right: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.5);
+}
+
+.aero-title{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.aero-glass p{
+    margin-top: 0
+}
+
+.aero-button{
+    background-color: white;
+    border-radius: 500px;
+    color: black;
+    font-weight: 500;
+    border: none;
+    padding: 0.4rem;
+    padding-inline: 1rem;
+}
