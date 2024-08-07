@@ -6,7 +6,7 @@ body{
     background-image: url('beachsunset.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
+    margin: 50px;
 }
 
 .aero-glass{
@@ -39,4 +39,17 @@ body{
     border: none;
     padding: 0.4rem;
     padding-inline: 1rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3  );
+    transition: 0.1s;
+}
+
+.aero-button:hover{
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+    cursor:pointer;
+}
+
+.aero-button:active{
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+    background-color: rgb(197, 197, 197);
+    transform: translate(0px, 2px);
 }
