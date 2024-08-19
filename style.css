@@ -1,15 +1,16 @@
-*{
+* {
     font-family: 'Inter';
     font-weight: 200;
 }
-body{
+
+body {
     background-image: url('beachsunset.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     margin: 50px;
 }
 
-.aero-glass{
+.aero-glass {
     padding: 2rem;
     padding-top: 3rem;
     padding-right: 3rem;
@@ -20,36 +21,58 @@ body{
     backdrop-filter: blur(10px);
     box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.5);
 }
-
-.aero-title{
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.aero-glass p{
+.aero-glass p {
     margin-top: 0
 }
 
-.aero-button{
-    background-color: white;
-    border-radius: 500px;
-    color: black;
-    font-weight: 500;
-    border: none;
-    padding: 0.4rem;
-    padding-inline: 1rem;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3  );
-    transition: 0.1s;
+.aero-title {
+    margin: 1rem 0;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.75);
 }
 
-.aero-button:hover{
-    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
-    cursor:pointer;
-}
 
-.aero-button:active{
-    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
-    background-color: rgb(197, 197, 197);
-    transform: translate(0px, 2px);
-}
+
+
+/* ------------------ General aero button setup ------------------ */
+    .aero-button {
+        border-radius: 500px;
+        font-weight: 500;
+        border: none;
+        padding: 0.4rem;
+        padding-inline: 1rem;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+        transition: 0.1s;
+    }
+
+    .aero-button:hover {
+        box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+    }
+
+    .aero-button:active {
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+        transform: translate(0px, 2px);
+    }
+
+/* ------------------ Primary ------------------ */
+    .aero-button-primary {
+        background-color: white;
+        color: black;
+    }
+    .aero-button-primary:active{
+        background-color: rgb(197, 197, 197);
+    }
+
+/* ------------------ Outlined ------------------ */
+    .aero-button-outlined {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white
+    }
+
+    .aero-button-outlined:active{
+        border: 1px solid rgb(197, 197, 197);
+        color: rgb(197, 197, 197);;
+    }
+
